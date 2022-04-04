@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.jira.jira-atlaskit-plugin:ipblocklisting', location = 'jira-atlaskit-module/js/ipblocklisting-api.js' */
+!function(){var n,i=new Promise(function(i){n=i});AJS.namespace("JIRA.API"),JIRA.API.getIPBlocklistApi=function(){return i},define("jira/global-components/ipblocklisting/bridge",function(){return function(i){n(i)}}),define("jira/global-components/ipblocklisting",function(){return i})}();;

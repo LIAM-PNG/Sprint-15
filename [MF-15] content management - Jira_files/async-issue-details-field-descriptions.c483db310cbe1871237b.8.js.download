@@ -1,0 +1,10 @@
+try{window.performance.mark("async-issue-details-field-descriptions.js:eval-start")}catch(e){}(window.webpackJsonp=window.webpackJsonp||[]).push([["async-issue-details-field-descriptions"],{vDh9:function(e,s,t){"use strict";t.r(s);var i=t("q1tI"),n=t("3tO9"),c=t.n(n);const r=e=>t("em5f").a`query {
+    issue(issueIdOrKey: "${e}", latestVersion: true, screen: "view") {
+        fields {
+            key
+            description
+        }
+    }
+}`,a={loading:!0,value:void 0},d=e=>{const[s,n]=Object(i.useState)(a),d=Object(i.useRef)(null);return Object(i.useEffect)((()=>{(async()=>{n(a);const s=await(async e=>{try{var s,i;const n=await Object(t("/rpS").d)("/rest/graphql/1/",{method:"POST",body:JSON.stringify({query:r(e)})});return null!=n&&null!==(s=n.data)&&void 0!==s&&null!==(i=s.issue)&&void 0!==i&&i.fields?n.data.issue.fields.reduce(((e,s)=>s.description?c()(c()({},e),{},{[s.key]:{description:s.description}}):c()({},e)),{}):void 0}catch(n){return void Object(t("v/G6").b)({error:n,id:"issue.details.fetch-field-description",packageName:"jiraIssueFieldDescription",logToSentry:!Object(t("HQr3").f)(n),sendToPrivacyUnsafeSplunk:!0})}})(e);n({loading:!1,value:s})})()}),[e]),d.current!==e?(d.current=e,a):s};s.default=()=>{const e=Object(t("ovRs").h)(),[,{setFieldConfigValue:s}]=Object(t("MoW5").b)(),{value:n,loading:c}=d(e);return Object(i.useEffect)((()=>{!c&&n&&Object.keys(n).forEach((t=>{const i=n[t];i&&s(e,t,{
+description:i.description||""})}))}),[e,n,c,s]),null}}}]);try{window.__jsEvalStop("async-issue-details-field-descriptions.js")}catch(e){}
+//# sourceMappingURL=https://statlas.prod.atl-paas.net/jira-frontend-source-maps/assets/async-issue-details-field-descriptions.6dc94b93bb10e845209f.8.js.map
